@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J3i-ov-esq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,24 +37,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356" y="24"/>
+            <point key="canvasLocation" x="-807" y="-337"/>
         </scene>
-        <!--Mario-->
+        <!--Um-->
         <scene sceneID="eSF-JA-ydZ">
             <objects>
-                <viewController id="Z4b-MJ-efg" sceneMemberID="viewController">
+                <viewController id="Z4b-MJ-efg" customClass="PlayViewController" customModule="NanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3mc-Ha-C3Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spaceship" translatesAutoresizingMaskIntoConstraints="NO" id="wL6-9l-lVK">
+                                <rect key="frame" x="67" y="465" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="j2n-dK-fmc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XaE-6h-WW7" appends="YES" id="tIp-5a-NUE"/>
+                            <outletCollection property="gestureRecognizers" destination="k4c-Va-Y3i" appends="YES" id="wmV-v7-ZnG"/>
+                            <outletCollection property="gestureRecognizers" destination="NwN-4w-HOq" appends="YES" id="wyQ-Sz-R8t"/>
+                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mario" id="yKa-Yw-X4t"/>
+                    <tabBarItem key="tabBarItem" title="Um" id="yKa-Yw-X4t"/>
+                    <connections>
+                        <outlet property="imgSpaceship" destination="wL6-9l-lVK" id="oeu-dU-5Zi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY6-sw-Je4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="XaE-6h-WW7">
+                    <connections>
+                        <action selector="onSwipeUp:" destination="Z4b-MJ-efg" id="Fww-mx-ofS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="k4c-Va-Y3i">
+                    <connections>
+                        <action selector="onSwipeRight:" destination="Z4b-MJ-efg" id="EA9-9b-rj8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="NwN-4w-HOq">
+                    <connections>
+                        <action selector="onSwipeLeft:" destination="Z4b-MJ-efg" id="Sow-BD-0cW"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1087" y="24"/>
         </scene>
-        <!--Personagem Três-->
+        <!--Três-->
         <scene sceneID="EaK-ZA-FUN">
             <objects>
                 <viewController id="np2-Bh-3oV" sceneMemberID="viewController">
@@ -64,13 +95,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hVa-Op-uk8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Personagem Três" id="zBa-UZ-DPo"/>
+                    <tabBarItem key="tabBarItem" title="Três" id="zBa-UZ-DPo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Reb-j5-qRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44" y="779"/>
         </scene>
-        <!--Yoshi-->
+        <!--Dois-->
         <scene sceneID="h2Q-K0-QW3">
             <objects>
                 <viewController id="aZh-tY-KeS" sceneMemberID="viewController">
@@ -80,7 +111,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uyu-ir-G2G"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Yoshi" id="US7-bZ-D94"/>
+                    <tabBarItem key="tabBarItem" title="Dois" id="US7-bZ-D94"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kn-N3-idr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,6 +123,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="J3i-ov-esq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6hE-d0-56v">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -106,4 +138,7 @@
             <point key="canvasLocation" x="346" y="24"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Spaceship" width="300" height="196"/>
+    </resources>
 </document>
