@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		995054DD20250FB300DC17DF /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995054DC20250FB300DC17DF /* PlayViewController.swift */; };
+		99897217202804E500D886E9 /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99897216202804E500D886E9 /* LevelViewController.swift */; };
+		9989721C202805EF00D886E9 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989721B202805EF00D886E9 /* Level.swift */; };
+		9989721E202808CA00D886E9 /* LevelBEPiD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989721D202808CA00D886E9 /* LevelBEPiD.swift */; };
+		9989722020280F3700D886E9 /* PlayableCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989721F20280F3700D886E9 /* PlayableCharacter.swift */; };
+		998972222028175000D886E9 /* ObstaclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998972212028175000D886E9 /* ObstaclesViewController.swift */; };
 		99A3BBB520228164007E453E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3BBB420228164007E453E /* AppDelegate.swift */; };
 		99A3BBB720228164007E453E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3BBB620228164007E453E /* ViewController.swift */; };
 		99A3BBBA20228164007E453E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A3BBB820228164007E453E /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 
 /* Begin PBXFileReference section */
 		995054DC20250FB300DC17DF /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		99897216202804E500D886E9 /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		9989721B202805EF00D886E9 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		9989721D202808CA00D886E9 /* LevelBEPiD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBEPiD.swift; sourceTree = "<group>"; };
+		9989721F20280F3700D886E9 /* PlayableCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayableCharacter.swift; sourceTree = "<group>"; };
+		998972212028175000D886E9 /* ObstaclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstaclesViewController.swift; sourceTree = "<group>"; };
 		99A3BBB120228164007E453E /* NanoChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A3BBB420228164007E453E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A3BBB620228164007E453E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +47,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		998972182028053500D886E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99A3BBB620228164007E453E /* ViewController.swift */,
+				99897216202804E500D886E9 /* LevelViewController.swift */,
+				995054DC20250FB300DC17DF /* PlayViewController.swift */,
+				998972212028175000D886E9 /* ObstaclesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		998972192028055200D886E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99A3BBB820228164007E453E /* Main.storyboard */,
+				99A3BBBD20228164007E453E /* LaunchScreen.storyboard */,
+				9989721F20280F3700D886E9 /* PlayableCharacter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9989721A202805DD00D886E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9989721B202805EF00D886E9 /* Level.swift */,
+				9989721D202808CA00D886E9 /* LevelBEPiD.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		99A3BBA820228164007E453E = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				99A3BBB420228164007E453E /* AppDelegate.swift */,
-				99A3BBB620228164007E453E /* ViewController.swift */,
-				99A3BBB820228164007E453E /* Main.storyboard */,
+				9989721A202805DD00D886E9 /* Model */,
+				998972192028055200D886E9 /* View */,
+				998972182028053500D886E9 /* Controller */,
 				99A3BBBB20228164007E453E /* Assets.xcassets */,
-				99A3BBBD20228164007E453E /* LaunchScreen.storyboard */,
 				99A3BBC020228164007E453E /* Info.plist */,
-				995054DC20250FB300DC17DF /* PlayViewController.swift */,
 			);
 			path = NanoChallenge2;
 			sourceTree = "<group>";
@@ -140,8 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A3BBB720228164007E453E /* ViewController.swift in Sources */,
+				9989722020280F3700D886E9 /* PlayableCharacter.swift in Sources */,
+				9989721E202808CA00D886E9 /* LevelBEPiD.swift in Sources */,
 				995054DD20250FB300DC17DF /* PlayViewController.swift in Sources */,
 				99A3BBB520228164007E453E /* AppDelegate.swift in Sources */,
+				9989721C202805EF00D886E9 /* Level.swift in Sources */,
+				99897217202804E500D886E9 /* LevelViewController.swift in Sources */,
+				998972222028175000D886E9 /* ObstaclesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
